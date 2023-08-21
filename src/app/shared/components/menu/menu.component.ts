@@ -9,7 +9,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class MenuComponent {
 
-    public menuItems: MenuItem[] = [ ];
+    public menuItems: MenuItem[] = [];
 
     ngOnInit() {
         this.menuItems = [
@@ -19,15 +19,18 @@ export class MenuComponent {
                 items: [
                     {
                         label: 'Textos y Fechas',
-                        icon: 'pi pi-align-left'
+                        icon: 'pi pi-align-left',
+                        routerLink: '/'
                     },
                     {
                         label: 'Números',
-                        icon: 'pi pi-dollar'
+                        icon: 'pi pi-dollar',
+                        routerLink: 'numbers'
                     },
                     {
                         label: 'No comunes',
-                        icon: 'pi pi-globe'
+                        icon: 'pi pi-globe',
+                        routerLink: 'uncommon'
                     }
                 ]
             },
@@ -37,7 +40,7 @@ export class MenuComponent {
                 items: [
                     {
                         label: 'Otro elemento',
-                        icon: 'pi pi-cog',
+                        icon: 'pi pi-cog'
                     }
                 ]
             }
